@@ -11,6 +11,12 @@ use GuzzleHttp\HandlerStack;
 
 class PendingHttpRequest
 {
+    private $cookies;
+    private $bodyFormat;
+    private $options;
+    private $beforeSendingCallbacks;
+    private $transferStats;
+
     function __construct()
     {
         $this->beforeSendingCallbacks = collect(function ($request, $options) {

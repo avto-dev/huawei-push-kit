@@ -1,22 +1,18 @@
-[![Build Status](https://travis-ci.org/afiqiqmal/huawei-push.svg?branch=master)](https://travis-ci.org/afiqiqmal/huawei-push)
-[![Coverage](https://img.shields.io/codecov/c/github/afiqiqmal/huawei-push.svg)](https://codecov.io/gh/afiqiqmal/huawei-push)
-[![Packagist](https://img.shields.io/packagist/dt/afiqiqmal/huawei-push.svg)](https://packagist.org/packages/afiqiqmal/huawei-push)
-[![Packagist](https://img.shields.io/packagist/v/afiqiqmal/huawei-push.svg)](https://packagist.org/packages/afiqiqmal/huawei-push)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/paypalme/mhi9388?locale.x=en_US)
+# Huawei Push Kit PHP
 
-![alt text](https://banners.beyondco.de/Huawei%20Push%20Kit%20PHP.png?theme=dark&packageName=afiqiqmal%2Fhuawei-push&pattern=brickWall&style=style_1&description=&md=1&showWatermark=0&fontSize=100px&images=cloud)
-
-# Huawei Push PHP
-
+> [!IMPORTANT]
+> This is a replacement for a `afiqiqmal/huawei-push` package that is currently not being updated.
 
 ### Installation
-```
-composer require afiqiqmal/huawei-push
+
+```sh
+composer require gomzyakov/huawei-push-kit
 ```
 
 ### Usage
 
 #### Get Access Token
+
 References : [Huawei OAuth](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/open-platform-oauth-0000001053629189-V5#EN-US_TOPIC_0000001053629189__section12493191334711)
 ```php
 $access = HuaweiPushKit::make([
@@ -36,7 +32,7 @@ Response
 ```json
 {
     "access_token": "ACCESS TOKEN",
-    "expires_in": 3600, // seconds
+    "expires_in": 3600,
     "token_type": "Bearer"
 }
 ```
@@ -117,4 +113,4 @@ Response
 Licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 
-<a href="https://www.paypal.com/paypalme/mhi9388?locale.x=en_US"><img src="https://i.imgur.com/Y2gqr2j.png" height="40"></a>  
+<a href="https://www.paypal.com/paypalme/mhi9388?locale.x=en_US"><img src="https://i.imgur.com/Y2gqr2j.png" height="40"></a>

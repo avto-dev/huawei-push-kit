@@ -6,6 +6,8 @@ namespace Afiqiqmal\HuaweiPush\Client;
 
 class HttpRequest
 {
+    private $request;
+
     function __construct($request)
     {
         $this->request = $request;

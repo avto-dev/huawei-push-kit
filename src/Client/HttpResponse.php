@@ -6,6 +6,9 @@ namespace Afiqiqmal\HuaweiPush\Client;
 
 class HttpResponse
 {
+    private $response;
+    private $cookies;
+
     function __construct($response)
     {
         $this->response = $response;
