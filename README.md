@@ -6,7 +6,7 @@
 ### Installation
 
 ```sh
-composer require gomzyakov/huawei-push-kit
+composer require avto-dev/huawei-push-kit
 ```
 
 ### Usage
