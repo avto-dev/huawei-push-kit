@@ -71,6 +71,11 @@ class HttpResponse
         return $this->cookies;
     }
 
+    function setCookies($cookies): void
+    {
+        $this->cookies = $cookies;
+    }
+
     function __toString()
     {
         return $this->body();
