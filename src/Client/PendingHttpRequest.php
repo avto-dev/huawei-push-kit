@@ -184,7 +184,7 @@ class PendingHttpRequest
                     $this->transferStats = $transferStats;
                 }
             ], $options))), function($response) {
-                $response->cookies = $this->cookies;
+                $response->setCookies($this->cookies);
                 $response->transferStats = $this->transferStats;
             });
         } catch (ConnectException $e) {
