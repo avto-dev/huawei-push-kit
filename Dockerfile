@@ -1,8 +1,8 @@
-FROM php:8.3.13-alpine
+FROM php:8.4.11-alpine
 
 ENV COMPOSER_HOME="/tmp/composer"
 
-COPY --from=composer:2.8.2 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.8.11 /usr/bin/composer /usr/bin/composer
 
 RUN set -x \
     && apk add --no-cache git \
